@@ -18,6 +18,7 @@ h) Método consultarDatos(): permitirá mostrar todos los datos de la cuenta
  */
 package guia07ejercicio05;
 
+import static Ui.UiMenu.showMenu;
 import guia07ejercicio05.Entidade.CuentaBancaria;
 
 /**
@@ -32,19 +33,15 @@ public class Guia07Ejercicio05 {
     public static void main(String[] args) {
         
         
-        CuentaBancaria cuentaUno = new CuentaBancaria();
+      
         
-        cuentaUno.crearCuenta();
-        cuentaUno.ingresarIngreso();
-        cuentaUno.retirarSaldo();
-        cuentaUno.extracionRapida(); 
-        cuentaUno.consultarDatos();
-        cuentaUno.consultarSaldo();
+        showMenu();
         
-        System.out.println(cuentaUno);
+        
+        
         
         
         // TODO code application logic here
     }
-    
+  
 }

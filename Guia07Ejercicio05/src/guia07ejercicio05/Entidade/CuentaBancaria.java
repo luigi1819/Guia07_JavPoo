@@ -96,6 +96,7 @@ public class CuentaBancaria {
             cantRetirar=leer.nextDouble();
             if(cantRetirar>cantMaxExtra){
                 System.out.println("la cantidad a retirar es mayor al saldo");
+                System.out.println("ingresa una nueva cantidad");
                 
             }else{
                 this.saldoCuenta-=cantRetirar;
