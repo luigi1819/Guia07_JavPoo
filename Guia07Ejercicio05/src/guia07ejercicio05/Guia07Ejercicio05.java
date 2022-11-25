@@ -19,7 +19,7 @@ h) Método consultarDatos(): permitirá mostrar todos los datos de la cuenta
 package guia07ejercicio05;
 
 import static Ui.UiMenu.showMenu;
-import guia07ejercicio05.Entidade.CuentaBancaria;
+
 
 /**
  *
