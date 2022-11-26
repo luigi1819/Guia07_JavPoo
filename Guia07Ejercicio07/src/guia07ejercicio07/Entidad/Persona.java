@@ -62,7 +62,7 @@ public class Persona {
     public Persona() {
     }
 
-    public Persona(String nombre, int edad, int peso, int altura) {
+    public Persona(String nombre, int edad, int peso, double altura) {
         this.nombre = nombre;
         this.edad = edad;
         this.peso = peso;
@@ -102,6 +102,23 @@ public class Persona {
     public void setAltura(double altura) {
         this.altura = altura;
     }
+
+    public int getImc() {
+        return imc;
+    }
+
+    public void setImc(int imc) {
+        this.imc = imc;
+    }
+
+    public boolean isMayorEdad() {
+        return mayorEdad;
+    }
+
+    public void setMayorEdad(boolean mayorEdad) {
+        this.mayorEdad = mayorEdad;
+    }
+    
     
     // metodos
     
@@ -137,13 +154,13 @@ public class Persona {
       imc = (double) peso/ Math.pow(altura, altura);
       
       if(imc<20){
-          System.out.println("persona por debajo del peso ideal");
+          //System.out.println("persona por debajo del peso ideal");
           this.imc = -1;
       }else if(imc<=25 && imc >=20){
-          System.out.println("persona esta en su peso ideal");
+          //System.out.println("persona esta en su peso ideal");
           this.imc = 0;
       }else{
-          System.out.println("persona con sobrepeso");
+          //System.out.println("persona con sobrepeso");
           this.imc = 1;
       }
         
@@ -155,10 +172,10 @@ public class Persona {
         boolean mayorEdad;
         
         if( this.edad < 18 ){
-            System.out.println("es menor de edad");
+            //System.out.println("es menor de edad");
             mayorEdad=false;
         }else{
-            System.out.println("es mayor de edad");
+            //System.out.println("es mayor de edad");
             mayorEdad=true;
             
         }
